@@ -25,41 +25,23 @@
 			return
 
 		spawn(0)
-			var/religion_name = "imperium"
-		//	var/new_religion = sanitize(input(H, "You are the crew services officer. Would you like to change your religion? Default is Christianity, in SPACE.", "Name change", religion_name), MAX_NAME_LEN)
+			var/religion_name = "Imperial cult"
+			var/new_religion = sanitize(input(H, "You are the crew services officer. Would you like to change your religion? Default is Christianity, in SPACE.", "Name change", religion_name), MAX_NAME_LEN)
 
 			if (!new_religion)
 				new_religion = religion_name
 			switch(lowertext(new_religion))
-				if("christianity")
-					B.SetName(pick("The Holy Bible","The Dead Sea Scrolls"))
-				if("satanism")
-					B.SetName("The Unholy Bible")
-				if("cthulu")
-					B.SetName("The Necronomicon")
-				if("islam")
-					B.SetName("Quran")
-				if("scientology")
-					B.SetName(pick("The Biography of L. Ron Hubbard","Dianetics")) 
-				if("chaos")
-					B.SetName("The Book of Lorgar")
 				if("imperium")
 					B.SetName("Uplifting Primer")
-				if("toolboxia")
-					B.SetName("Toolbox Manifesto")
-				if("homosexuality")
-					B.SetName("Guys Gone Wild")
-				if("science")
-					B.SetName(pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition")) 
 				else
 					B.SetName("The Holy Book of [new_religion]")
 			feedback_set_details("religion_name","[new_religion]")
-
+ //The Inquisition does not allow for worship outside of the cult
 		spawn(1)
 			var/deity_name = "God Emperor of Man"
-		//	var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is Space Jesus.", "Name change", deity_name), MAX_NAME_LEN)
+			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the God Emperor of Manking. The Inquisition may execute you for heresy if you stray from this.", "Name change", deity_name), MAX_NAME_LEN)
 
-			if ((length(new_deity) == 0) || (new_deity == "Space Jesus") )
+			if ((length(new_deity) == 0) || (new_deity == "The God Emperor of Mankind") )
 				new_deity = deity_name
 			B.deity_name = new_deity
 
@@ -128,6 +110,6 @@
 				ticker.Bible_item_state = B.item_state
 				ticker.Bible_name = B.name
 				ticker.Bible_deity_name = B.deity_name
-			feedback_set_details("religion_deity","[new_deity]")
+			feedback_set_details("religion_deity","[deity_name]")
 			feedback_set_details("religion_book","[new_book_style]")
 		return 1
