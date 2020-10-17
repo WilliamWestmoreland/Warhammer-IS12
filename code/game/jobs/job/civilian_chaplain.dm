@@ -1,12 +1,12 @@
 //Due to how large this one is it gets its own file
 /datum/job/chaplain
-	title = "Chaplain"
+	title = "Ministorum Priest"
 	department = "Civilian"
 	department_flag = CIV
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
@@ -25,8 +25,8 @@
 			return
 
 		spawn(0)
-			var/religion_name = "Christianity"
-			var/new_religion = sanitize(input(H, "You are the crew services officer. Would you like to change your religion? Default is Christianity, in SPACE.", "Name change", religion_name), MAX_NAME_LEN)
+			var/religion_name = "imperium"
+		//	var/new_religion = sanitize(input(H, "You are the crew services officer. Would you like to change your religion? Default is Christianity, in SPACE.", "Name change", religion_name), MAX_NAME_LEN)
 
 			if (!new_religion)
 				new_religion = religion_name
@@ -40,7 +40,7 @@
 				if("islam")
 					B.SetName("Quran")
 				if("scientology")
-					B.SetName(pick("The Biography of L. Ron Hubbard","Dianetics"))
+					B.SetName(pick("The Biography of L. Ron Hubbard","Dianetics")) 
 				if("chaos")
 					B.SetName("The Book of Lorgar")
 				if("imperium")
@@ -50,14 +50,14 @@
 				if("homosexuality")
 					B.SetName("Guys Gone Wild")
 				if("science")
-					B.SetName(pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition"))
+					B.SetName(pick("Principle of Relativity", "Quantum Enigma: Physics Encounters Consciousness", "Programming the Universe", "Quantum Physics and Theology", "String Theory for Dummies", "How To: Build Your Own Warp Drive", "The Mysteries of Bluespace", "Playing God: Collector's Edition")) 
 				else
 					B.SetName("The Holy Book of [new_religion]")
 			feedback_set_details("religion_name","[new_religion]")
 
 		spawn(1)
-			var/deity_name = "Space Jesus"
-			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is Space Jesus.", "Name change", deity_name), MAX_NAME_LEN)
+			var/deity_name = "God Emperor of Man"
+		//	var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is Space Jesus.", "Name change", deity_name), MAX_NAME_LEN)
 
 			if ((length(new_deity) == 0) || (new_deity == "Space Jesus") )
 				new_deity = deity_name
