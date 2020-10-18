@@ -164,38 +164,11 @@
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
 
-//Non-hardsuit ERT helmets.
-//Commander
-/obj/item/clothing/head/helmet/ert
-	name = "asset protection command helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has blue highlights."
-	icon_state = "erthelmet_cmd"
-	valid_accessory_slots = null
-	item_state_slots = list(
-		slot_l_hand_str = "syndicate-helm-green",
-		slot_r_hand_str = "syndicate-helm-green",
-		)
-	armor = list(melee = 62, bullet = 50, laser = 50,energy = 35, bomb = 10, bio = 2, rad = 0)
+//Warhammer 40k stuff below
 
-//Security
-/obj/item/clothing/head/helmet/ert/security
-	name = "asset protection security helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has red highlights."
-	icon_state = "erthelmet_sec"
-
-//Engineer
-/obj/item/clothing/head/helmet/ert/engineer
-	name = "asset protection engineering helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has orange highlights."
-	icon_state = "erthelmet_eng"
-
-//Medical
-/obj/item/clothing/head/helmet/ert/medical
-	name = "asset protection medical helmet"
-	desc = "An in-atmosphere helmet worn by many corporate and private asset protection forces. Has red and white highlights."
-	icon_state = "erthelmet_med"
-
-/obj/item/clothing/head/helmet/tactical/mirania
-	name = "bundeforz tactical helmet"
-	desc = "A light grey helmet made from advanced ceramic. Comfortable and robust."
-	icon_state = "m_helmet"
+/obj/item/clothing/head/helmet/flak
+	name = "flak helmet"
+	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
+	icon_state = "guard"
+	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
+	siemens_coefficient = 0.6
