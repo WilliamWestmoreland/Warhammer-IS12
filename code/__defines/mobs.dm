@@ -368,9 +368,8 @@
 #define BLUE_TEAM "Bluecoats"
 #define RED_TEAM "Redcoats"
 
-//Warhammer
-#define IMPERIUM "The Astra Imperium"
-
+//warhammer
+#define IMPERIUM "Imperium of Man"
 /*
 #define SKILL_LOW(x) x<=4
 

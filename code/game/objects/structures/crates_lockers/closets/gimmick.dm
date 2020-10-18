@@ -55,3 +55,40 @@
 		/obj/item/clothing/shoes/swat = 2,
 		/obj/item/clothing/suit/space/void/swat = 2,
 		/obj/item/clothing/under/syndicate/tacticool = 2)
+
+/obj/structure/closet/thunderdome
+	name = "\improper Thunderdome closet"
+	desc = "Everything you need!"
+	icon_state = "syndicate"
+	icon_closed = "syndicate"
+	icon_opened = "syndicateopen"
+	anchored = 1
+
+/obj/structure/closet/thunderdome/tdred
+	name = "red-team Thunderdome closet"
+
+/obj/structure/closet/thunderdome/tdred/WillContain()
+	return list(
+		/obj/item/clothing/suit/armor/tdome/red = 3,
+		/obj/item/melee/energy/sword = 3,
+		/obj/item/gun/energy/laser = 3,
+		/obj/item/melee/baton = 3,
+		/obj/item/storage/box/flashbangs = 3,
+		/obj/item/clothing/head/helmet/thunderdome = 3
+	)
+
+/obj/structure/closet/thunderdome/tdgreen
+	name = "green-team Thunderdome closet"
+	icon_state = "syndicate1"
+	icon_closed = "syndicate1"
+	icon_opened = "syndicate1open"
+
+/obj/structure/closet/thunderdome/tdgreen/WillContain()
+	return list(
+		/obj/item/clothing/suit/armor/tdome/green = 3,
+		/obj/item/melee/energy/sword = 3,
+		/obj/item/gun/energy/laser = 3,
+		/obj/item/melee/baton = 3,
+		/obj/item/storage/box/flashbangs = 3,
+		/obj/item/clothing/head/helmet/thunderdome = 3
+	)

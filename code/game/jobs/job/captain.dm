@@ -1,7 +1,7 @@
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
-	title = "Rogue Trader"
+	title = "Captain"
 	department = "Command"
 	head_position = 1
 	department_flag = COM
@@ -28,7 +28,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	return get_all_station_access()
 
 /datum/job/hop
-	title = "Seneschal"
+	title = "Head of Personnel"
 	head_position = 1
 	department_flag = COM|CIV
 

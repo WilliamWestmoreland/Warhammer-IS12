@@ -41,6 +41,7 @@
 		client.warfare_deaths++
 
 	// as far as i know there are no immediate jobtype vars in mind or human, so here we go
+	/*
 	if(SSjobs?.GetJobByTitle(job)?.type == /datum/job/soldier/red_soldier/captain)
 		for(var/X in SSwarfare.red.team)
 			var/mob/living/carbon/human/H = X
@@ -58,7 +59,7 @@
 		GLOB.first_death_happened = TRUE
 	if(!GLOB.final_words)
 		GLOB.final_words = last_words
-
+*/
 /mob/living/carbon/human/proc/handle_warfare_life()
 	if(!iswarfare())
 		return

@@ -1,5 +1,5 @@
 /datum/job/chief_engineer
-	title = "Mago"
+	title = "Chief Engineer"
 	head_position = 1
 	department = "Engineering"
 	department_flag = ENG|COM
@@ -26,13 +26,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 
 /datum/job/engineer
-	title = "Enginseer"
+	title = "Engineer"
 	department = "Engineering"
 	department_flag = ENG
 
 	total_positions = 8
 	spawn_positions = 7
-	supervisors = "the Magos"
+	supervisors = "the chief engineer"
 	selection_color = "#5b4d20"
 	economic_modifier = 5
 	minimal_player_age = 7
