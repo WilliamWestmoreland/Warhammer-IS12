@@ -1,12 +1,12 @@
 /datum/job/cmo
-	title = "Chief Medical Officer"
+	title = "Sister Hospitaller"
 	head_position = 1
 	department = "Medical"
 	department_flag = MED|COM
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "Orders Hospitaller"
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -22,14 +22,14 @@
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
 
 /datum/job/doctor
-	title = "Medical Doctor"
+	title = "Discipulus"
 	department = "Medical"
 	department_flag = MED
 
 	minimal_player_age = 3
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the chief medical officer"
+	supervisors = "the Sister Hospitaller"
 	selection_color = "#633d63"
 	economic_modifier = 7
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
@@ -43,14 +43,14 @@
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist
-	title = "Chemist"
+	title = "Pharmacist"
 	department = "Medical"
 	department_flag = MED
 
 	minimal_player_age = 7
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the chief medical officer"
+	supervisors = "the Sister Hospitaller"
 	selection_color = "#633d63"
 	economic_modifier = 5
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)

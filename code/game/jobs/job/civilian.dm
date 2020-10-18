@@ -21,11 +21,11 @@
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_kitchen)
-//	alt_titles = list("Cook")
+	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
 /datum/job/hydro
-	title = "Botanic"
+	title = "Farmer"
 	department = "Service"
 	department_flag = SRV
 	total_positions = 2
@@ -76,7 +76,7 @@
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
-//	alt_titles = list("Drill Technician","Prospector")
+	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
 
 /datum/job/janitor
@@ -89,7 +89,7 @@
 	selection_color = "#515151"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
-//	alt_titles = list("Custodian","Sanitation Technician")
+	alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 
 //More or less assistants
@@ -106,13 +106,13 @@
 //	alt_titles = list("Journalist")
 	outfit_type = /decl/hierarchy/outfit/job/librarian
 
-/datum/job/lawyer
-	title = "Internal Affairs Agent"
+/datum/job/inquisitor
+	title = "Inquisitorial Acolyte"
 	department = "Support"
 	department_flag = SPT
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Seneschal"
+	supervisors = "The Golden Throne"
 	selection_color = "#515151"
 	economic_modifier = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_heads)
