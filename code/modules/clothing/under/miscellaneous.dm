@@ -687,4 +687,16 @@
 	desc = "Heretics beware."
 	icon_state = "uni-church"
 	item_state = "uni-church"
-	//_color = "uni-church" 
+	//_color = "uni-church"
+
+
+//Putting all the 40k stuff down below here.
+
+/obj/item/clothing/under/guard/uniform
+	name = "trooper uniform"
+	desc = "A standard-issue uniform for the Imperial Guard, made from slightly more durable materials than the civilian clothings."
+	icon_state = "guard"
+	item_state = "guard"
+	worn_state = "guard"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9

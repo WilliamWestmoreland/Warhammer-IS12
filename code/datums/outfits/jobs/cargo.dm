@@ -42,7 +42,6 @@
 	mask = /obj/item/clothing/mask/gas/explorer
 	uniform = /obj/item/clothing/under/rank/explorer
 	back = /obj/item/storage/backpack/industrial
-	suit = /obj/item/clothing/suit/armor/vest/warden/explorer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots
 	r_pocket = /obj/item/ammo_box/rifle
