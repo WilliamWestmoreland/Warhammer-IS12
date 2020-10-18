@@ -2433,7 +2433,7 @@
 #include "code\unit_tests\~unit_test_types.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
-#include "maps\oldfare\warfare.dm"
-#include "maps\oldfare\warfare_define.dm"
+#include "maps\warhammer\warhammer.dm"
+#include "maps\warhammer\warhammer_define.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
